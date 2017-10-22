@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2017, 5:39:01 PM
+    Author     : Jeganathan
+*/
+header {
+        background-color: darkblue;
+          padding: 10px;
+    border: 1px solid black;
+    outline-color: blueviolet;
+}
+
+header.dotted {
+    outline-style: dotted;
+}
+p {
+        background-color:lightcyan;
+          padding: 10px;
+    border: 1px solid black;
+    outline-color: blueviolet;
+}
+
+p.dotted {
+    outline-style: dotted;
+}
+body{
+    background-image: url("gradient.jpeg");
+    color: whitesmoke;
+}

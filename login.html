@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Credit card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+    <center>
+    <h2>PLEASE FILL THE DETAILS FOR SHOPPING IN JEGANSTARK BANK</h2>
+    </center>
+</header>
+        <section>
+    <form id=payment action="newjsp.jsp" method="POST">
+        <fieldset>
+            <ol>
+                <li>
+                    <label for=name>Name</label>
+
+                    <input id=name name=name type=text placeholder="First and last name" required autofocus />
+                </li>
+                <li>
+                    <label for=email>Email</label>
+                    <input id=email name=email type=email placeholder="example@domain.com" required />
+                </li>
+                <li>
+                    <label for=phone>Phone</label>
+                    <input id=phone name=phone type=tel placeholder="Eg. +91" required />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery address</legend>
+            <ol>
+                <li>
+                    <label for=address>Address</label>
+                    <textarea id=address name=address rows=5 required>
+                    </textarea>
+                </li>
+                <li>
+                    <label for=postcode>Post Code</label>
+                    <input id=postcode name=postcode type=text required />
+
+                </li>
+                <li>
+                    <label for=country>Country</label>
+                    <input id=country name=country type=text required />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Card Details</legend>
+            <ol>
+             <li>
+                <fieldset>
+                    <legend>Card Type</legend>
+                    <ol>
+                        <li>
+                            <input id=visa name=cardtype type=radio />
+                            <label for=visa>VISA</label>
+                        </li>
+                        <li>
+                            <input id=amex name=cardtype type=radio />
+                            <label for=amex>AmEx</label>
+                        </li>
+                        <li>
+                            <input id=mastercard name=cardtype type=radio />
+                            <label for=mastercard>Mastercard</label>
+                        </li>
+                    </ol>
+                </fieldset>
+                </li>
+                <li>
+                    <label for=cardnumber>Card Number</label>
+                    <input id=cardnumber name=cardnumber type=number required />
+                </li>
+                <li>
+                    <label for=secure>Security Code</label>
+                    <input id=secure name=secure type=number required />
+                </li>
+                <li>
+                    <label for=namecard>Name on Card</label>
+                    <input id=namecard name=namecard type=text placeholder="Exact namne as on the card" required />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Item Details</legend>
+            <label>Enter the item no.....:</label>
+            <input type="text" name="t1"/><br>
+            <label>Enter the name:</label>
+            <input type="text" name="t2"/><br>
+            <label>Enter the amount.....:</label>
+            <input type="text" name="t3"/>
+        </fieldset>    
+        <fieldset>
+            <center>
+            <button type=submit onclick="newjsp.jsp">Buy It!</button>
+            <button id="button" onclick="index.html">Exit</button>
+            </center>
+        </fieldset>
+    </form>
+</section>
+    </body>
+</html>
